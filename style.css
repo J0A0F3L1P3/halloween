@@ -108,8 +108,8 @@ main{
 
 .item1{
   transform: translate(18%, 13%);
-  grid-row: 1;
-  grid-column: 5;
+  grid-row: 3;
+  grid-column: 3;
   height: 75%;
   width: 75%;
   z-index: 1;
@@ -117,8 +117,8 @@ main{
 
 .item2{
   transform: translate(18%, 13%);
-  grid-row: 7;
-  grid-column: 5;
+  grid-row: 3;
+  grid-column: 7;
   height: 75%;
   width: 75%;
   z-index: 1;
