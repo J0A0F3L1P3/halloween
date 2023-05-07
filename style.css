@@ -1,3 +1,5 @@
+/* Cores usadas */
+
 :root {
    --cor-prima: #6E8C03;
    --cor-secun: #5A7302;
@@ -8,6 +10,10 @@
    --cor-azulCla: #9BB9BF;
    --cor-azul: #0367A6;
    --cor-azulEsc: #023E73;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
 
 /* Formatação */
@@ -23,12 +29,11 @@
 /* Design */
 
 body{
+  padding: 1vh 1vw;
   background-color: var(--cor-azulEsc);
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
 }
 
 .display{
@@ -36,27 +41,27 @@ body{
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 30px;
-  width: 800px;
-  height: 870px;
+  border-radius: 3vh;
+  width: 84vh;
+  height: 89vh;
 }
 
 header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-  width: 800px;
-  padding: 0px 50px;
+  height: 5vh;
+  width: 100%;
+  padding: 0vw 5vh;
   background-color: var(--cor-azul);
   color: var(--cor-azulCla);
 }
 
 main{
-  top: 70px;
+  top: 6vh;
   position: absolute;
-  height: 800px;
-  width: 800px;
+  height: 84vh;
+  width: 84vh;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
@@ -115,27 +120,28 @@ main > div:nth-child(2n){
 /* Opções do Jogador */
 
 #escolhas{
-  margin: 10px;
+  margin-right: 1vw;
   position: absolute;
+  /* bottom: 0px; */
   right: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: var(--cor-cinCla);
-  padding: 10px;
-  border-radius: 30px;
+  padding: 1vh;
+  border-radius: 3vh;
 }
 
 #userChoose{
   background-color: #023E73;
-  border-radius: 20px;
+  border-radius: 2vh;
   background-image: url("");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 20vw;
-  width: 20vw;
+  height: 30vh;
+  width: 30vh;
   z-index: 10;
 }
 
@@ -152,11 +158,11 @@ nav ul{
 }
 
 nav ul li{
-  margin: 10px;
-  height: 60px;
-  width: 200px;
+  margin: 1vh;
+  height: 6.5vh;
+  width: 22vh;
   background-color: #0367A6;
-  border-radius: 100px;
+  border-radius: 100vh;
 }
 
 nav ul li:hover{
@@ -164,7 +170,7 @@ nav ul li:hover{
 }
 
 label{
-  font-size: 30px;
+  font-size: 4vh;
   height: 100%;
   width: 100%;
   display: flex;
@@ -174,8 +180,23 @@ label{
 
 /* Responsividade */
 
-@media(max-width: 1320px){
+@media(max-width: 1350px){
   #escolhas{
     flex-direction: column;
+  }
+}
+
+@media(max-width: 1120px){
+  .display{
+    height: 61vh;
+    width: 56vh;
+  }
+  main{
+    height: 56vh;
+    width: 56vh;
+  }
+  #escolhas{
+    bottom: 0px;
+    flex-direction: row;
   }
 }
