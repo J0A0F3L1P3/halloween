@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3528/3528294.png" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="src/img/icon-halloween.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/style.css">
   <title>HALLOWEEN</title>
 </head>
 
@@ -14,104 +14,20 @@
   <div class="display">
     <header>
       <h1 id="username">Username</h1>
+      <h1>Vidas: <span id="vidas"></span></h1>
       <h1>Nivel: <span id="nivel">00</span></h1>
     </header>
 
     <main class="playerPoint">
-      <img class="player" src="" alt="">
-      <img class="zombie" src="https://cdn-icons-png.flaticon.com/512/1078/1078220.png" alt="">
-      <img class="item1" src="https://cdn-icons-png.flaticon.com/512/1078/1078205.png" alt="">
-      <img class="item2" src="https://cdn-icons-png.flaticon.com/512/1078/1078203.png" alt="">
+      <img class="player">
     </main>
 
-    <main>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-      <div class="area"></div>
-    </main>
+    <main id="board"></main>
   </div>
 
   <div id="escolhas">
 
-    <div id="userChoose"> </div>
+    <div id="userChoose"></div>
 
     <nav>
       <ul>
@@ -136,7 +52,8 @@
 
   </div>
 
-  <script src="script.js"></script>
+  <script src="src/js/interface.js"></script>
+  <script src="src/js/jogo.js"></script>
 
 </body>
 
