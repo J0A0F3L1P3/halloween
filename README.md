@@ -13,14 +13,10 @@ Um mini game temático de Halloween onde o jogador precisa **coletar doces e evi
 ### 🎮 Controles
 - Use **setas do teclado** ou teclas **W, A, S, D** para movimentar o personagem.
 
-### ❤️ Vidas & 🍬 Itens
-- Você começa com **2 vidas**.
-- A cada fase, o número de doces e zumbis **aumenta**.
-- Pegue todos os doces para passar de nível.
-
-### 🧠 Pontuação
+### 🧠 Pontuação & 🍬 Itens
 - A pontuação depende da quantidade de **movimentos feitos**.
 - Menos movimentos = melhor desempenho!
+- A cada fase, o número de doces e zumbis **aumenta**.
 
 ---
 
